@@ -131,7 +131,14 @@ class LoginPage extends StatelessWidget {
                   const SizedBox(height: 40),
                   ElevatedButton(
                     onPressed: () {
-                      RegisterPage();
+                      // RegisterPage();
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return RegisterPage();
+                          },
+                        ),
+                      );
                     },
                     child: const Text('Register'),
                   ),

@@ -22,7 +22,7 @@ class RegisterPage extends StatelessWidget {
     if (isValid) {
       // tervalidasi
       Uri url = Uri.parse(
-        '${AppConstant.baseURL}/user/login.php',
+        '${AppConstant.baseURL}/user/register.php',
       );
       http.post(url, body: {
         'username': edtUsername.text,
@@ -158,7 +158,8 @@ class RegisterPage extends StatelessWidget {
                   const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
-                      LoginPage();
+                      // LoginPage();
+                      login(context);
                     },
                     child: const Text('Register'),
                   ),
