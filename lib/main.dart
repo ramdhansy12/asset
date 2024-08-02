@@ -1,4 +1,3 @@
-import 'package:course_asset_management/pages/user/register_page.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/user/login_page.dart';
